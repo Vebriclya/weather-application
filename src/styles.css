@@ -1,0 +1,99 @@
+body {
+    padding: 0;
+    border: 0;
+    margin: 0;
+    color: antiquewhite;
+}
+
+.window-div {
+    display: grid;
+    grid-template-rows: 50px 9fr;
+    grid-template-columns: repeat(3, 1fr);
+    width: 100vw;
+    height: 100vh;
+    background-image: url(background2.gif);
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size:cover;
+    background-size: cover;
+}
+
+.header {
+    grid-template-columns: repeat(2, 1fr);
+    grid-row-start: 1;
+    grid-column: 1/4;
+    display: grid;
+    padding-top: 5px;
+}
+
+.search {
+    justify-self: end;
+    padding-left: 10px;
+    height: 30px;
+    width: 250px;
+    margin-top: 10px;
+    margin-right: 30px;
+    border-radius: 25px;
+    border: 1px solid rgb(128, 128, 128);
+    background-color: rgba(0,0,0,0.5);
+    color: antiquewhite;
+}
+
+.location-div {
+    margin-top: 3px;
+    margin-left: 30px;
+    font-size: 40px;
+}
+
+.weather-section{
+    display: grid;
+    grid-template-rows: 1fr 3fr;
+    padding-left: 10px;
+}
+
+.day-and-moonphase{
+    align-self: end;
+}
+
+.day{
+    font-size: 35px;
+}
+
+.moon-phase{
+    font-size: 20px;
+}
+
+.weather-box {
+    display: grid;
+    grid-template-columns: 3fr 10px 5fr;
+    width: 90%;
+    align-self: baseline;
+}
+
+.temperature {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    width: fit-content;
+}
+
+.temp-text {
+    font-size: 150px;
+}
+
+.temp-format {
+    font-size: 30px;
+    padding-top: 30px;
+}
+
+.vl {
+    border-left: 3px solid antiquewhite;
+    height: 130px;  
+    align-self: center;
+    margin-left: 5px; 
+}
+
+.details{
+    padding-left: 5px;
+    margin-top: 10px;
+    align-self: center;
+}
